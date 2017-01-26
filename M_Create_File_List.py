@@ -17,12 +17,12 @@ for file in os.listdir(patch_folder + '/'):
 
 file_list = open(patch_folder + '/file_list.txt', 'w')
 if workflow_files:
-    file_list.write(str('В патч идут потоки:\n'))
+    file_list.write(str('Ставятся потоки:\n'))
     for sql_item in sql_files:
         file_list.writelines(sql_item + '\n')
 
 if sql_files:
-    file_list.write(str('В патч идут скрипты:\n'))
+    file_list.write(str('Ставятся скрипты:\n'))
     for sql_item in sql_files:
         file_list.writelines(sql_item + '\n')
 
